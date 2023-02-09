@@ -28,6 +28,7 @@
         font-family: "Libre Franklin", sans-serif;
       }
     </style>
+    <script src="https://kit.fontawesome.com/f165a59b56.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -39,9 +40,21 @@
         <p>Subscribe and get notified</p>
       </div>
       <div class="form-container">
-        <form action="#">
-          <input type="text">
-          <input type="text">
+        <form>
+          <input
+          type="email"
+          name="email"
+          placeholder="Your email address…"
+          class="email"
+          required
+          autocomplete="email"
+          >
+          <label for="email"></label>
+          <input
+          type="submit"
+          value="Notify Me"
+          class="notify"
+          >
         </form>
       </div>
       <div class="dashboard">
@@ -49,7 +62,11 @@
       </div>
     </main>
     <footer>
-      <div class="social-media"></div>
+      <div class="social-media">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </footer>
 
