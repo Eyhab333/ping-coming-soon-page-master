@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ahab" />
     <meta name="description" content="Ping coming soon page" />
-    <meta name="keywords" content="signup, form, frontendmentor, challenge, coming soon" />
+    <meta
+      name="keywords"
+      content="signup, form, frontendmentor, challenge, coming soon"
+    />
 
     <link
       rel="icon"
@@ -28,7 +31,10 @@
         font-family: "Libre Franklin", sans-serif;
       }
     </style>
-    <script src="https://kit.fontawesome.com/f165a59b56.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f165a59b56.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -36,25 +42,28 @@
         <img src="./images/logo.svg" alt="logo" />
       </div>
       <div class="text">
-        <h1>We are launching <span>soon!</span> </h1>
+        <h1>We are launching <span>soon!</span></h1>
         <p>Subscribe and get notified</p>
       </div>
       <div class="form-container">
         <form>
-          <input
-          type="email"
-          name="email"
-          placeholder="Your email address…"
-          class="email"
-          required
-          autocomplete="email"
-          >
-          <label for="email"></label>
-          <input
-          type="submit"
-          value="Notify Me"
-          class="notify"
-          >
+          <div>
+            <input
+              type="email"
+              id="email-field"
+              class="email"
+              name="email"
+              placeholder="Your email address…"
+              spellcheck="false"
+              required
+              autocomplete="email"
+              onkeyup="validateEmail()"
+            />
+            <span id="email-error-message"></span>
+          </div>
+          <div>
+            <input type="submit" value="Notify Me" class="submit-button" id="submit-button"/>
+          </div>
         </form>
       </div>
       <div class="dashboard">
